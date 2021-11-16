@@ -1,0 +1,19 @@
+
+        b:link {    /*a 태그에서 처음 로딩했을때 */
+            color : #9797fa;
+            text-decoration: none;
+            text-shadow: 3px 3px 5px #b9b9b9;
+            font-weight: bold;
+        }
+        b:visited{  /*방문 했던 사이트에 대한 설정*/
+            color: #d2ffc8;
+        }
+        b:hover{    /*마우스를 롤오버 했을때*/
+            color : rgb(145, 220, 255);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        b:active{   /*마우스를 링크걸린 곳에 클릭했을때*/
+            color: salmon;
+        }
+
