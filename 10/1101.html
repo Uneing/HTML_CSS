@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학사일정표</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #new h3{
+            padding-bottom: 5px;
+            width: 810px;
+            border-bottom: solid 3px #80a727 ;
+            margin : 30px 10px 0 10px;
+        }
+        #new h3 span{
+            color : #4a6115;
+        }
+        #new h4{
+            
+            margin: 15px 0 15px 350px;
+        }
+        table, th, tr, td{
+            border: solid 1px black;
+            border-collapse: collapse;
+            margin-left: 10px;  
+            width: 800px;                                             
+         }
+         
+         #a{
+             background-color: rgb(215, 255, 255);
+             font-weight: bold;
+         }
+         .b{
+             color: red;
+         }
+         .c{
+             color: blue;
+         }
+         th{
+             width: 150px;
+             height: 15px;
+             padding: 5px;
+         }
+         td{
+             height: 80px;
+             padding-left: 5px ;
+             vertical-align: top;
+         }
+         #new{
+            width: 100%;
+            height: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id ="new">
+
+    <h3><span>학사일정</span></h3>
+   
+    <h4>
+        <img src="img/left.png">
+        2017년 6월
+        <img src = "img/right.png">
+    </h4>
+    
+    <table>
+        <tr id = "a"><th  class = "b">일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th class = "c">토</th></tr>
+        <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td class = "c">5</td></tr>
+        <tr><td class = "b">6</td><td>7</td><td>8</td><td>9<br>특강</td><td>10</td><td>11</td><td class = "c">12</td></tr>
+        <tr><td class = "b">13</td><td>14<br>기말고사</td><td>15<br>기말고사</td><td>16<br>기말고사</td><td>17<br>기말고사</td><td>18<br>기말고사</td><td class = "c">19</td></tr>
+        <tr><td class = "b">20</td><td>21<br>하계방학</td><td>22</td><td>23</td><td>24</td><td>25</td><td class = "c">26</td></tr>
+        <tr><td class = "b">27</td><td>28</td><td>29<br>MT</td><td>30<br>MT</td><td>31</td><td></td><td></td></tr>
+    </table>
+
+    
+</div>
+</body>
+</html>
