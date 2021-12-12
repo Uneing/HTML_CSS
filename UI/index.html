@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 회원관리 VER 1.0</title>
+    <style>
+        *{
+           box-sizing: border-box; 
+           margin: 0;
+           padding: 0;
+        }
+        .clear{
+            clear: both;
+        }
+        ul{
+            list-style-type: none;
+        }
+     
+        .top_menu li{
+            display: inline;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+            font-size: 15px;            
+        }
+        .top_title{
+            background-color: blue;
+            height: 80px;
+        }
+        .top_title p{
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 40px;
+            padding-top: 15px;
+        }
+        .top_menu{
+            background-color: rgb(198, 198, 241);
+            text-align: center;
+            height: 90px;
+            padding : 10px;
+            
+        }
+        table{
+            margin-left:500px;
+            margin-top: 30px;
+        }
+        table, tr, td, th{
+            text-align: center;
+            border: solid 1px black;
+        }
+        th,td{
+            width: 300px;
+        }
+      
+        .footer{
+            background: linear-gradient(90deg, blue,rgb(150, 183, 253) );
+            height: 60px;
+        }
+        .footer_text{
+            color: white;
+            text-align: center;
+            padding-top: 12px;
+        }
+        main{
+            background-color: lightgrey;
+        }
+        .text{
+            border-radius: 10px;
+            background: linear-gradient(90deg, pink,lavender);
+        }
+        #select { 
+            width: 165px;
+        }
+        @media screen and (max-width : 600px){
+            .top_menu li{
+                display: block;
+                padding: 0;
+                margin: 0;
+            }
+            table, th, tr, td{
+                margin: 0;
+            }
+        }
+        h2{
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div class = "top_title">
+                <p>쇼핑몰 회원관리 VER 1.0</p>
+            </div>
+            <nav class = "top_menu">
+                <ul>
+                    <li>회원등록</li>
+                    <li>회원목록조회/수정</a></li>
+                    <li>회원매출조회</li>
+                    <li>홈으로</li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id = "main">
+            
+                <h2>쇼핑몰 회원 등록</h2>   
+                <table> 
+                <tr class = "ta"><tr><th>회원번호(자동발생)</th><td><input type = "text" class = "text"></td></tr>
+                <tr class = "ta"><th>회원성명</th><td><input type = "text" class = "text"></td></tr>
+                <tr class = "ta"><th>회원주소</th><td><input type = "text" class = "text"></td></tr>
+                <tr class = "ta"><th>가입일자</th><td><input type = "text" class = "text"></td></tr>
+                <tr class = "ta"><th>고객등급 [A:VIP, B:일반, C:직원]</th><td>
+                    <select class="text" id = "select">
+                        <option></option>
+                        <option>A:VIP</option>
+                        <option>B:일반</option>
+                        <option>C:직원</option>
+                    </select> 
+                </td></tr>
+                <tr><th>도시코드</th><td><input type = "text" class = "text"></td></tr>
+                <tr><td colspan="2"><input type="reset" value="등록">
+                    <input type = "submit" value="조회"></td></tr>
+            </table>
+        </section>
+    </main>
+    <div class = "clear"></div>
+    <footer>
+        <div class = "footer">
+            <p class = "footer_text">
+                HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Serivece of Korea
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
